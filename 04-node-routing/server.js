@@ -1,3 +1,5 @@
 var http = require("http");
+var app =  require("./app");
 
-http.createServer().listen(3000);
+
+http.createServer(app.handleRequest).listen(3000);
